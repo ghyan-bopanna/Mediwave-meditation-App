@@ -2,6 +2,7 @@ import { registerRootComponent } from 'expo';
 import "./config/firebase";
 import App from './App';
 
+
 import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,

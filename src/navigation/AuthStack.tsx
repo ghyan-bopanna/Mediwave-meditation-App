@@ -14,7 +14,7 @@ const AuthStack = () => {
   return (
     <>
       <StatusBar style="light" />
-      <Navigator>
+      <Navigator id={undefined}>
         <Screen
           options={STANDARD_NAVIGATION_OPTIONS}
           name="Signup"

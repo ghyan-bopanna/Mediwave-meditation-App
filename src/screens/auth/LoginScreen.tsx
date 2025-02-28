@@ -22,7 +22,7 @@ const LoginScreen = ({ navigation }: LoginScreenProps) => {
   });
 
   //call login from useAuthService
-  const { login } = useAuthentication();
+  const { login, loading } = useAuthentication();
 
   return (
     <BackgroundScreenWrapper image={backgroundImage}>
@@ -49,6 +49,7 @@ const LoginScreen = ({ navigation }: LoginScreenProps) => {
           <View style={{ marginTop: 15 }}>
             <MediButton
               onPress={() => login(credentials.email, credentials.password)}
+              loading={loading}
             >
               Login
             </MediButton>

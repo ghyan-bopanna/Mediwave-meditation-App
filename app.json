@@ -22,7 +22,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ghyan_bops.Mediwave"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -30,7 +31,24 @@
     "plugins": [
       "expo-build-properties",
       "@react-native-firebase/app",
-      "@react-native-firebase/auth"
-    ]
+      "@react-native-firebase/auth",
+      "expo-audio",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a2c36243-9894-4268-b149-da31d91886ca"
+      },
+      "doctor": {
+        "reactNativeDirectoryCheck": {
+          "listUnknownPackages": false
+        }
+      }
+    }
   }
 }

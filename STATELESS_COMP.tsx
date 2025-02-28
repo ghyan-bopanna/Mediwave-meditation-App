@@ -18,4 +18,3 @@ export default ComponentName;
 const styles = StyleSheet.create({
   container: {},
 });
-

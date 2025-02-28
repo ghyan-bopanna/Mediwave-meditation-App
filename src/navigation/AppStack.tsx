@@ -1,13 +1,11 @@
-//React Native Stateless Componant
-
 import * as React from "react";
 import { StyleSheet } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import SignupScreen from "../screens/auth/SignupScreen";
-import LoginScreen from "../screens/auth/LoginScreen";
 import { STANDARD_NAVIGATION_OPTIONS } from "../utils/NavigationOptions";
 import { StatusBar } from "expo-status-bar";
-import HomeScreen from "../screens/app/HomeScreen";
+import AppTabs from "./AppTabs";
+import PlaylistScreen from "../screens/app/PlaylistScreen";
+import MusicPlayerScreen from "../screens/app/MusicPlayerScreen";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -18,8 +16,18 @@ const AppStack = () => {
       <Navigator>
         <Screen
           options={STANDARD_NAVIGATION_OPTIONS}
-          name="Home"
-          component={HomeScreen}
+          name="AppTabs"
+          component={AppTabs}
+        />
+        <Screen
+          options={STANDARD_NAVIGATION_OPTIONS}
+          name="PlaylistScreen"
+          component={PlaylistScreen}
+        />
+        <Screen
+          options={STANDARD_NAVIGATION_OPTIONS}
+          name="MusicPlayerScreen"
+          component={MusicPlayerScreen}
         />
       </Navigator>
     </>
