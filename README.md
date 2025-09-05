@@ -98,7 +98,7 @@ Mediwave/
 - Play meditation tracks with a built-in **music player**.  
 - Control playback (**play, pause, next, previous**).  
 
-## Working
+## Working (Click on image to see Video !!!)
 
 [![Watch the Demo](https://img.youtube.com/vi/_nIA1YhYPKM/0.jpg)](https://www.youtube.com/watch?v=_nIA1YhYPKM)
 
